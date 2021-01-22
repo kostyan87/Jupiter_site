@@ -12,6 +12,12 @@ body {
   margin: auto;
 }
 
+@media (max-width: 1024px) {
+  .container {
+    max-width: 760px;
+  }
+}
+
 .header__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,5 +101,23 @@ body {
   font-weight: 500;
   font-size: 14px;
   color: white;
+}
+
+.navbar .navbar__wrap a .navbar__small-text {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .navbar .navbar__wrap a {
+    width: 126px;
+    font-size: 14px;
+    overflow: hidden;
+  }
+  .navbar .navbar__wrap a .navbar__small-text {
+    display: block;
+  }
+  .navbar .navbar__wrap a .navbar__big-text {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -15,6 +15,27 @@
          font-weight: 500;
          font-size: 14px;
          color: white;
+         .navbar__small-text {
+            display: none;
+         }
+      }
+   }
+}
+
+@media (max-width: 1024px) {
+   .navbar {
+      .navbar__wrap {
+         a {
+            width: 126px;
+            font-size: 14px;
+            overflow: hidden;
+            .navbar__small-text {
+               display: block;
+            }
+            .navbar__big-text {
+               display: none;
+            } 
+         }
       }
    }
 }

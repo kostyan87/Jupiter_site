@@ -1,22 +1,29 @@
 .navbar {
+   position: sticky;
+   top: 0;
    .navbar__wrap {
       margin-top: 11px;
-      display: flex;
-      justify-content: space-between;
-      a {
-         width: 217px;
-         height: 34px;
-         background: $jupiter-red;
-         cursor: pointer;
+      .navbar__mobile {
+         display: none;
+      }
+      .navbar__list {
          display: flex;
-         justify-content: center;
-         align-items: center;
-         text-decoration: none;
-         font-weight: 500;
-         font-size: 14px;
-         color: white;
-         .navbar__small-text {
-            display: none;
+         justify-content: space-between;
+         a {
+            width: 217px;
+            height: 34px;
+            background: $jupiter-red;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            color: white;
+            .navbar__small-text {
+               display: none;
+            }
          }
       }
    }
@@ -25,16 +32,43 @@
 @media (max-width: 1024px) {
    .navbar {
       .navbar__wrap {
-         a {
-            width: 159px;
-            font-size: 14px;
-            overflow: hidden;
-            .navbar__small-text {
-               display: block;
+         .navbar__list {
+            a {
+               width: 159px;
+               font-size: 14px;
+               .navbar__small-text {
+                  display: block;
+               }
+               .navbar__big-text {
+                  display: none;
+               }
             }
-            .navbar__big-text {
-               display: none;
-            } 
+         }
+      }
+   }
+}
+
+@media (max-width: 972px) {
+   .navbar {
+      .navbar__wrap {
+         .navbar__list {
+            a {
+               width: 149px;
+               font-size: 14px;
+            }
+         }
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   .navbar {
+      .navbar__wrap {
+         .navbar__list {
+            a {
+               width: 116px;
+               font-size: 13px;
+            }
          }
       }
    }

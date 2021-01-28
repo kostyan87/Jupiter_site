@@ -5,9 +5,10 @@ $(document).ready(function(){
       nextArrow: $('.btn-right'),
       dots: true,
       dotsClass: 'slider__dots-wrapper',
+      adaptiveHeight: true,
       responsive: [
          {
-            breakpoint: 428,
+            breakpoint: 500,
             settings: {
                arrows: false
             }

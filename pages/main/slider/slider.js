@@ -4,6 +4,14 @@ $(document).ready(function(){
       prevArrow: $('.btn-left'),
       nextArrow: $('.btn-right'),
       dots: true,
-      dotsClass: 'slider__dots-wrapper'
+      dotsClass: 'slider__dots-wrapper',
+      responsive: [
+         {
+            breakpoint: 428,
+            settings: {
+               arrows: false
+            }
+         }
+      ]
    });
 });

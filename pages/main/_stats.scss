@@ -76,9 +76,6 @@
                font-size: 14px;
             }
          }
-         .stats__item:last-child {
-            margin-left: 1;
-         }
       }
    }
 }
@@ -88,17 +85,31 @@
       .stats__title {
          margin-top: 30px;
          font-size: 18px;
+         text-align: center;
       }
       .stats__container {
-         margin-top: 8px;
+         margin-top: 15px;
+         border: none;
+         box-shadow: none;
          .stats__item {
+            width: 50%;
+            margin-left: 0;
             h1 {
-               font-size: 29px;
+               font-size: 45px;
             }
             span {
                margin-top: 10px;
                font-size: 14px;
             }
+         }
+         .stats__item:nth-child(3) {
+            margin-top: 15px;
+         }
+         .stats__item:nth-child(4) {
+            margin-top: 15px;
+         }
+         .stats__item:nth-child(5) {
+            margin-top: 15px;
          }
       }
    }
@@ -107,29 +118,11 @@
 @media (max-width: 376px) {
    .stats {
       .stats__container {
+         margin-top: 10px;
          .stats__item {
-            margin-left: 10px;
-         }
-         .stats__item:nth-child(3) {
-            margin-left: 0;
-         }
-      }
-   }
-}
-
-@media (max-width: 321px) {
-   .stats {
-      .stats__title {
-         margin-top: 30px;
-         text-align: center;
-      }
-      .stats__container {
-         border: none;
-         box-shadow: none;
-         flex-direction: column;
-         .stats__item {
-            margin-top: 15px;
-            margin-left: 0;
+            h1 {
+               font-size: 45px;
+            }
          }
       }
    }

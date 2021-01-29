@@ -521,4 +521,322 @@ body.lock {
    }
 }
 */
+.last-game .last-game__title {
+  text-align: center;
+  margin: 0;
+  margin-top: 56px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.last-game .last-game__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 22px;
+}
+
+.last-game .last-game__container .last-game__score {
+  width: 15.7%;
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 41px;
+}
+
+.last-game .last-game__container .last-game__team {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 40%;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.last-game .last-game__container .last-game__team img {
+  width: 13.4%;
+}
+
+.last-game .last-game__container .last-game__team .hosts-logo {
+  margin-left: 19px;
+}
+
+.last-game .last-game__container .last-game__team .guests-logo {
+  margin-right: 19px;
+}
+
+.last-game .last-game__container .guests {
+  justify-content: flex-start;
+}
+
+@media (max-width: 1204px) {
+  .last-game .last-game__title {
+    margin-top: 50px;
+    font-size: 22px;
+  }
+  .last-game .last-game__container {
+    margin-top: 20px;
+  }
+  .last-game .last-game__container .last-game__score {
+    font-size: 32px;
+  }
+  .last-game .last-game__container .last-game__team {
+    font-size: 16px;
+  }
+  .last-game .last-game__container .last-game__team img {
+    width: 15%;
+  }
+  .last-game .last-game__container .last-game__team .hosts-logo {
+    margin-left: 15px;
+  }
+  .last-game .last-game__container .last-game__team .guests-logo {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .last-game .last-game__title {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .last-game .last-game__container {
+    margin-top: 10px;
+  }
+  .last-game .last-game__container .last-game__score {
+    font-size: 28px;
+  }
+  .last-game .last-game__container .last-game__team {
+    font-size: 14px;
+  }
+  .last-game .last-game__container .last-game__team img {
+    width: 17%;
+  }
+  .last-game .last-game__container .last-game__team .hosts-logo {
+    margin-left: 15px;
+  }
+  .last-game .last-game__container .last-game__team .guests-logo {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 426px) {
+  .last-game .last-game__title {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+  .last-game .last-game__container {
+    margin-top: 8px;
+    justify-content: center;
+  }
+  .last-game .last-game__container .last-game__score {
+    font-size: 24px;
+  }
+  .last-game .last-game__container .last-game__team {
+    font-size: 12px;
+    flex-direction: column;
+  }
+  .last-game .last-game__container .last-game__team img {
+    width: 35%;
+  }
+  .last-game .last-game__container .last-game__team .hosts-logo {
+    margin-left: 0;
+  }
+  .last-game .last-game__container .last-game__team .guests-logo {
+    margin-right: 0;
+  }
+  .last-game .last-game__container .last-game__team .team-title {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .last-game .last-game__container .hosts {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 321px) {
+  .last-game .last-game__container {
+    margin-top: 8px;
+    justify-content: center;
+  }
+  .last-game .last-game__container .last-game__score {
+    font-size: 24px;
+  }
+  .last-game .last-game__container .last-game__team {
+    font-size: 12px;
+    flex-direction: column;
+  }
+  .last-game .last-game__container .last-game__team img {
+    width: 35%;
+  }
+  .last-game .last-game__container .last-game__team .team-title {
+    margin-top: 10px;
+  }
+  .last-game .last-game__container .hosts {
+    flex-direction: column-reverse;
+  }
+}
+
+.stats .stats__title {
+  font-weight: 500;
+  font-size: 22px;
+  margin: 0;
+  margin-top: 56px;
+}
+
+.stats .stats__container {
+  margin-top: 26px;
+  min-height: 189px;
+  border: 0.5px solid #313131;
+  box-shadow: 0px 3px 6px rgba(49, 49, 49, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.stats .stats__container .stats__item {
+  text-align: center;
+  margin-left: 8.4%;
+}
+
+.stats .stats__container .stats__item h1 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 45px;
+  color: #D4041C;
+}
+
+.stats .stats__container .stats__item span {
+  display: block;
+  margin-top: 13px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #262626;
+}
+
+.stats .stats__container .stats__item:first-child {
+  margin-left: 0;
+}
+
+@media (max-width: 1024px) {
+  .stats .stats__title {
+    margin-top: 50px;
+  }
+  .stats .stats__container {
+    margin-top: 20px;
+  }
+  .stats .stats__container .stats__item {
+    margin-left: 7%;
+  }
+  .stats .stats__container .stats__item h1 {
+    font-size: 40px;
+  }
+  .stats .stats__container .stats__item span {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats .stats__title {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .stats .stats__container {
+    margin-top: 10px;
+  }
+  .stats .stats__container .stats__item {
+    margin-left: 5%;
+  }
+  .stats .stats__container .stats__item h1 {
+    font-size: 30px;
+  }
+  .stats .stats__container .stats__item span {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .stats .stats__container .stats__item:last-child {
+    margin-left: 1;
+  }
+}
+
+@media (max-width: 426px) {
+  .stats .stats__title {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+  .stats .stats__container {
+    margin-top: 8px;
+  }
+  .stats .stats__container .stats__item h1 {
+    font-size: 29px;
+  }
+  .stats .stats__container .stats__item span {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 376px) {
+  .stats .stats__container .stats__item {
+    margin-left: 10px;
+  }
+  .stats .stats__container .stats__item:nth-child(3) {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 321px) {
+  .stats .stats__title {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .stats .stats__container {
+    border: none;
+    box-shadow: none;
+    flex-direction: column;
+  }
+  .stats .stats__container .stats__item {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+}
+
+.birth .birth__title {
+  font-weight: 500;
+  font-size: 22px;
+  color: #262626;
+  margin: 0;
+  margin-top: 56px;
+}
+
+.birth .birth__container {
+  border: 0.5px solid #313131;
+  box-shadow: 0px 3px 6px rgba(49, 49, 49, 0.25);
+  border-radius: 2px;
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.birth .birth__container .birth__col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.birth .birth__container .birth__col .birth__item {
+  display: flex;
+}
+
+.birth .birth__container .birth__col .birth__item img {
+  padding-left: 22px;
+}
+
+.birth .birth__container .birth__col .birth__item h1 {
+  font-weight: 500;
+  font-size: 20px;
+}
 /*# sourceMappingURL=style.css.map */

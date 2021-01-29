@@ -1,0 +1,136 @@
+.stats {
+   .stats__title {
+      font-weight: 500;
+      font-size: 22px;
+      margin: 0;
+      margin-top: 56px;
+   }
+   .stats__container {
+      margin-top: 26px;
+      min-height: 189px;
+      border: 0.5px solid #313131;
+      box-shadow: 0px 3px 6px rgba(49, 49, 49, 0.25);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      .stats__item {
+         text-align: center;
+         margin-left: 8.4%;
+         h1 {
+            margin: 0;
+            font-weight: 500;
+            font-size: 45px;
+            color: $jupiter-red;
+         }
+         span {
+            display: block;
+            margin-top: 13px;
+            font-weight: 500;
+            font-size: 15px;
+            color: $font-color;
+         }
+      }
+      .stats__item:first-child {
+         margin-left: 0;
+      }
+   }
+}
+
+@media (max-width: 1024px) {
+   .stats {
+      .stats__title {
+         margin-top: 50px;
+      }
+      .stats__container {
+         margin-top: 20px;
+         .stats__item {
+            margin-left: 7%;
+            h1 {
+               font-size: 40px;
+            }
+            span {
+               margin-top: 10px;
+               font-size: 14px;
+            }
+         }
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   .stats {
+      .stats__title {
+         margin-top: 30px;
+         font-size: 20px;
+      }
+      .stats__container {
+         margin-top: 10px;
+         .stats__item {
+            margin-left: 5%;
+            h1 {
+               font-size: 30px;
+            }
+            span {
+               margin-top: 10px;
+               font-size: 14px;
+            }
+         }
+         .stats__item:last-child {
+            margin-left: 1;
+         }
+      }
+   }
+}
+
+@media (max-width: 426px) {
+   .stats {
+      .stats__title {
+         margin-top: 30px;
+         font-size: 18px;
+      }
+      .stats__container {
+         margin-top: 8px;
+         .stats__item {
+            h1 {
+               font-size: 29px;
+            }
+            span {
+               margin-top: 10px;
+               font-size: 14px;
+            }
+         }
+      }
+   }
+}
+
+@media (max-width: 376px) {
+   .stats {
+      .stats__container {
+         .stats__item {
+            margin-left: 10px;
+         }
+         .stats__item:nth-child(3) {
+            margin-left: 0;
+         }
+      }
+   }
+}
+
+@media (max-width: 321px) {
+   .stats {
+      .stats__title {
+         margin-top: 30px;
+         text-align: center;
+      }
+      .stats__container {
+         border: none;
+         box-shadow: none;
+         flex-direction: column;
+         .stats__item {
+            margin-top: 15px;
+            margin-left: 0;
+         }
+      }
+   }
+}

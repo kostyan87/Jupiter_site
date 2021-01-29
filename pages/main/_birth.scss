@@ -1,0 +1,32 @@
+.birth {
+   .birth__title {
+      font-weight: 500;
+      font-size: 22px;
+      color: $font-color;
+      margin: 0;
+      margin-top: 56px;
+   }
+   .birth__container {
+      border: 0.5px solid #313131;
+      box-shadow: 0px 3px 6px rgba(49, 49, 49, 0.25);
+      border-radius: 2px;
+      margin-top: 26px;
+      display: flex;
+      justify-content: space-around;
+      .birth__col {
+         width: 50%;
+         display: flex;
+         flex-direction: column;
+         .birth__item {
+            display: flex;
+            img {
+               padding-left: 22px;
+            }
+            h1 {
+               font-weight: 500;
+               font-size: 20px;
+            }
+         }
+      }
+   }
+}

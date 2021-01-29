@@ -1,0 +1,159 @@
+.last-game {
+   .last-game__title {
+      text-align: center;
+      margin: 0;
+      margin-top: 56px;
+      font-size: 22px;
+      font-weight: 500;
+   }
+   .last-game__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      margin-top: 22px;
+      .last-game__score {
+         width: 15.7%;
+         display: block;
+         text-align: center;
+         font-weight: 500;
+         font-size: 34px;
+         line-height: 41px;
+      }
+      .last-game__team {
+         display: flex;
+         justify-content: flex-end;
+         align-items: center;
+         width: 40%;
+         font-weight: 500;
+         font-size: 20px;
+         img {
+            width: 13.4%;
+         }
+         .hosts-logo {
+            margin-left: 19px;
+         }
+         .guests-logo {
+            margin-right: 19px;
+         }
+      }
+      .guests {
+         justify-content: flex-start;
+      }
+   }
+}
+
+@media (max-width: 1204px) {
+   .last-game {
+      .last-game__title {
+         margin-top: 50px;
+         font-size: 22px;
+      }
+      .last-game__container {
+         margin-top: 20px;
+         .last-game__score {
+            font-size: 32px;
+         }
+         .last-game__team {
+            font-size: 16px;
+            img {
+               width: 15%;
+            }
+            .hosts-logo {
+               margin-left: 15px;
+            }
+            .guests-logo {
+               margin-right: 15px;
+            }
+         }
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   .last-game {
+      .last-game__title {
+         margin-top: 30px;
+         font-size: 20px;
+      }
+      .last-game__container {
+         margin-top: 10px;
+         .last-game__score {
+            font-size: 28px;
+         }
+         .last-game__team {
+            font-size: 14px;
+            img {
+               width: 17%;
+            }
+            .hosts-logo {
+               margin-left: 15px;
+            }
+            .guests-logo {
+               margin-right: 15px;
+            }
+         }
+      }
+   }
+}
+
+@media (max-width: 426px) {
+   .last-game {
+      .last-game__title {
+         margin-top: 30px;
+         font-size: 18px;
+      }
+      .last-game__container {
+         margin-top: 8px;
+         justify-content: center;
+         .last-game__score {
+            font-size: 24px;
+         }
+         .last-game__team {
+            font-size: 12px;
+            flex-direction: column;
+            img {
+               width: 35%;
+            }
+            .hosts-logo {
+               margin-left: 0;
+            }
+            .guests-logo {
+               margin-right: 0;
+            }
+            .team-title {
+               margin-top: 10px;
+               text-align: center;
+            }
+         }
+         .hosts {
+            flex-direction: column-reverse;
+         }
+      }
+   }
+}
+
+@media (max-width: 321px) {
+   .last-game {
+      .last-game__container {
+         margin-top: 8px;
+         justify-content: center;
+         .last-game__score {
+            font-size: 24px;
+         }
+         .last-game__team {
+            font-size: 12px;
+            flex-direction: column;
+            img {
+               width: 35%;
+            }
+            .team-title {
+               margin-top: 10px;
+            }
+         }
+         .hosts {
+            flex-direction: column-reverse;
+         }
+      }
+   }
+}

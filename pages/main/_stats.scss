@@ -82,34 +82,38 @@
 
 @media (max-width: 426px) {
    .stats {
-      .stats__title {
+      .stats__wrap {
+         width: 90%;
+         margin: 0 auto;
          margin-top: 30px;
-         font-size: 18px;
-         text-align: center;
-      }
-      .stats__container {
-         margin-top: 15px;
-         border: none;
-         box-shadow: none;
-         .stats__item {
-            width: 50%;
-            margin-left: 0;
-            h1 {
-               font-size: 45px;
+         .stats__title {
+            font-size: 18px;
+         }
+         .stats__container {
+            margin-top: 10px;
+            width: 100%;
+            min-height: 300px;
+            align-content: center;
+            .stats__item {
+               width: 50%;
+               margin-left: 0;
+               h1 {
+                  font-size: 45px;
+               }
+               span {
+                  margin-top: 5px;
+                  font-size: 14px;
+               }
             }
-            span {
-               margin-top: 10px;
-               font-size: 14px;
+            .stats__item:nth-child(3) {
+               margin-top: 15px;
             }
-         }
-         .stats__item:nth-child(3) {
-            margin-top: 15px;
-         }
-         .stats__item:nth-child(4) {
-            margin-top: 15px;
-         }
-         .stats__item:nth-child(5) {
-            margin-top: 15px;
+            .stats__item:nth-child(4) {
+               margin-top: 15px;
+            }
+            .stats__item:nth-child(5) {
+               margin-top: 15px;
+            }
          }
       }
    }
@@ -117,11 +121,17 @@
 
 @media (max-width: 376px) {
    .stats {
-      .stats__container {
-         margin-top: 10px;
-         .stats__item {
-            h1 {
-               font-size: 45px;
+      .stats__wrap {
+         .stats__container {
+            min-height: 260px;
+            margin-top: 10px;
+            .stats__item {
+               h1 {
+                  font-size: 40px;
+               }
+               span {
+                  font-size: 12px;
+               }
             }
          }
       }

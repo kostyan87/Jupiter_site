@@ -1,73 +1,61 @@
-.history {
-   .history__title {
+.about {
+   h1 {
       margin: 0;
       margin-top: 4.4%;
-      text-align: center;
       font-weight: 500;
       font-size: 25px;
       line-height: 30px;
+      text-align: center;
       color: $font-color;
    }
-   .history__text {
-      margin: 0;
-      margin-top: 4.4%;
-      font-size: 20px;
-      line-height: 24px;
-      color: $font-color;
-   }
-   .history__text:nth-child(3) {
-      margin-top: 2%;
-   }
-   .history__big-img {
-      display: block;
-      margin: 0 auto;
+   img {
       margin-top: 4.4%;
       max-width: 100%;
    }
-   .history__row-img {
-      margin: 0 auto;
+   p {
+      color: $font-color;
+      margin: 0;
+      margin-top: 2%;
+      font-size: 20px;
+      line-height: 24px;
+   }
+   p:nth-child(3) {
       margin-top: 4.4%;
-      width: 71.3%;
-      display: flex;
-      justify-content: space-between;
-      img {
-         width: 48%;
-      }
    }
 }
 
 @media (max-width: 1024px) {
-   .history {
-      .history__title {
+   .about {
+      h1 {
          font-size: 22px;
       }
-      .history__text {
+      p {
          font-size: 18px;
       }
    }
 }
 
 @media (max-width: 768px) {
-   .history {
-      .history__title {
+   .about {
+      h1 {
          font-size: 18px;
       }
-      .history__text {
+      p {
          font-size: 16px;
       }
    }
 }
 
 @media (max-width: 426px) {
-   .history {
+   .about {
       .container {
          max-width: 95%;
-         .history__title {
+         h1 {
             margin-top: 25%;
             font-size: 14px;
             line-height: 15px;
          }
-         .history__text {
+         p {
             font-size: 12px;
             line-height: 15px;
          }
@@ -76,13 +64,13 @@
 }
 
 @media (max-width: 376px) {
-   .history {
+   .about {
       .container {
-         .history__title {
-            margin-top: 35%;
+         h1 {
+            margin-top: 30%;
             font-size: 14px;
          }
-         .history__text {
+         p {
             font-size: 12px;
          }
       }

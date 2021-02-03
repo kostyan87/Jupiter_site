@@ -1,0 +1,105 @@
+.trophies {
+   h1 {
+      margin: 0;
+      margin-top: 4.4%;
+      text-align: center;
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 30px;
+      color: $font-color;
+   }
+   .trophies__container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .trophies__item {
+         margin-top: 4.4%;
+         border: 1px solid $font-color;
+         box-shadow: 0px 3px 6px rgba(49, 49, 49, 0.25);
+         border-radius: 2px;
+         width: 31%;
+         height: 483px;
+         display: flex;
+         flex-direction: column;
+         justify-content: start;
+         img {
+            max-width: 81%;
+            max-height: 60%;
+            margin: auto;
+            margin-top: 9%;
+            margin-bottom: 0;
+         }
+         span {
+            text-align: center;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            margin-top: 9%;
+         }
+      }
+   }
+}
+
+@media (max-width: 1024px) {
+   .trophies {
+      h1 {
+         font-size: 22px;
+      }
+      .trophies__container {
+         .trophies__item {
+            height: 400px;
+            span {
+               font-size: 14px;
+               line-height: 16px;
+            }
+         }
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   .trophies {
+      h1 {
+         font-size: 18px;
+      }
+      .trophies__container {
+         .trophies__item {
+            height: 330px;
+            span {
+               font-size: 12px;
+               line-height: 14px;
+            }
+         }
+      }
+   }
+}
+
+@media (max-width: 426px) {
+   .trophies {
+      h1 {
+         font-size: 14px;
+         line-height: 15px;
+         margin-top: 25%;
+      }
+      .trophies__container {
+         margin-top: 4.4%;
+         justify-content: center;
+         .trophies__item {
+            width: 80%;
+            height: 280px;
+            span {
+               font-size: 10px;
+               line-height: 14px;
+            }
+         }
+      }
+   }
+}
+
+@media (max-width: 376px) {
+   .trophies {
+      h1 {
+         margin-top: 30%;
+      }
+   }
+}

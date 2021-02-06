@@ -164,21 +164,21 @@
             <div class="birth__container">
                <div class="birth__col">
                   <div class="birth__item birth-first">
-                     <img src="images/birth-1.png" alt="">
+                     <img src="images/birth-1.jpg" alt="">
                      <div class="birth-item__title">
                         <h1>Дмитрий Захаров</h1>
                         <span>9 октября</span>
                      </div>
                   </div>
                   <div class="birth__item">
-                     <img src="images/birth-2.png" alt="">
+                     <img src="images/birth-2.jpg" alt="">
                      <div class="birth-item__title">
                         <h1>Ярослав Юркевич</h1>
                         <span>30 октября</span>
                      </div>
                   </div>
                   <div class="birth__item">
-                     <img src="images/birth-3.png" alt="">
+                     <img src="images/birth-3.jpg" alt="">
                      <div class="birth-item__title">
                         <h1>Азиз Шохакимов</h1>
                         <span>26 декабря</span>
@@ -187,21 +187,21 @@
                </div>
                <div class="birth__col">
                   <div class="birth__item">
-                     <img src="images/birth-4.png" alt="">
+                     <img src="images/birth-4.jpg" alt="">
                      <div class="birth-item__title">
                         <h1>Александр Тарасов</h1>
                       <span>16 января</span>
                      </div>
                   </div>
                   <div class="birth__item">
-                     <img src="images/birth-5.png" alt="">
+                     <img src="images/birth-5.jpg" alt="">
                      <div class="birth-item__title">
                         <h1>Владислав Ефимов</h1>
                       <span>3 февраля</span>
                      </div>
                   </div>
                   <div class="birth__item">
-                     <img src="images/birth-6.png" alt="">
+                     <img src="images/birth-6.jpg" alt="">
                      <div class="birth-item__title">
                         <h1>Артемий Степаненко</h1>
                       <span>17 января</span>
@@ -221,57 +221,57 @@
             <div class="matches__container">
                <div class="matches__item">
                   <div class="matches__hosts">
-                     <img src="images/match-logo-2.png" alt="">
+                     <img src="images/match-logo-2.svg" alt="">
                      <span>ФК "Муринский Арсенал"</span>   
                   </div>
                   <span class="score">0 : 3</span>
                   <div class="matches__guests">
                     <span>ШФК "Юпитер"</span>
-                    <img src="images/match-logo.png" alt=""> 
+                    <img src="images/match-logo.svg" alt=""> 
                   </div>
                </div>
                <div class="matches__item">
                   <div class="matches__hosts">
-                     <img src="images/match-logo.png" alt="">
+                     <img src="images/match-logo.svg" alt="">
                      <span>ШФК "Юпитер"</span>   
                   </div>
                   <span class="score">16 : 10</span>
                   <div class="matches__guests">
                      <span>ФК "Муринский Арсенал"</span>
-                     <img src="images/match-logo-2.png" alt="">  
+                     <img src="images/match-logo-2.svg" alt="">  
                   </div>
                </div>
                <div class="matches__item">
                   <div class="matches__hosts">
-                     <img src="images/match-logo.png" alt="">
+                     <img src="images/match-logo.svg" alt="">
                      <span>ШФК "Юпитер"</span>   
                   </div>
                   <span class="score">2 : 0</span>
                   <div class="matches__guests">
                      <span>ШСК "Токсовские Надежды"</span>
-                     <img src="images/match-logo-2.png" alt="">   
+                     <img src="images/match-logo-2.svg" alt="">   
                   </div>
                </div>
                <div class="matches__item">
                   <div class="matches__hosts">
-                     <img src="images/match-logo.png" alt="">
+                     <img src="images/match-logo.svg" alt="">
                      <span>ШФК "Юпитер"</span>   
                   </div>
                   <span class="score">8 : 0</span>
                   <div class="matches__guests">
                      <span>ФК "Буйволы"</span>
-                     <img src="images/match-logo-2.png" alt="">  
+                     <img src="images/match-logo-2.svg" alt="">  
                   </div>
                </div>
                <div class="matches__item">
                   <div class="matches__hosts">
-                     <img src="images/match-logo-2.png" alt="">
+                     <img src="images/match-logo-2.svg" alt="">
                      <span>ФК "Лисы"</span>   
                   </div>
                   <span class="score">0 : 5</span>
                   <div class="matches__guests">
                      <span>ШФК "Юпитер"</span>
-                     <img src="images/match-logo.png" alt="" >   
+                     <img src="images/match-logo.svg" alt="" >   
                   </div>
                </div>
             </div>
@@ -283,8 +283,8 @@
    <footer class="footer">
       <div class="container">
          <div class="footer__container">
-            <img src="../../interface/footer/images/footer-logo.png" alt="" class="footer__logo">
-            <a href="https://vk.com/jupiters_fanclub" target="_blank"><img src="../../interface/footer/images/footer-vk.png" alt="" class="footer__vk"></a>
+            <img src="../../interface/footer/images/footer-logo.svg" alt='ШФК "Юпитер"' class="footer__logo">
+            <a href="https://vk.com/jupiters_fanclub" target="_blank"><img src="../../interface/footer/images/footer-vk.svg" alt="ВКонтакте" class="footer__vk"></a>
          </div>
       </div>
    </footer>
@@ -298,6 +298,14 @@
    <!-- Скрипты для слайдера -->
    <script src="slider/slick.min.js"></script>
    <script type="text/javascript" src="slider/slider.js"></script>
+
+   <!-- Снежинки -->
+   <script src="../../snowfall/snowfall.js"></script>
+   <script type="text/javascript">
+      $(document).ready(function(){
+         $(document).snowfall({image :"../../snowfall/img/snow3.png", minSize: 10, maxSize:20});
+      });
+   </script>
 
 </body>
 </html>
